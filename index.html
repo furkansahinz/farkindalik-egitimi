@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hacked</title>
+    
     <style>
         body {
             background-color: black;
@@ -40,9 +41,45 @@
             z-index: 0;
             line-height: 1.5rem;
         }
+        .logo-container {
+            position: fixed;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+        .logo-container img {
+            width: 200px; /* Logo boyutu artırıldı */
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            color: red;
+            text-align: center;
+            font-size: 1rem;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: black;
+        }
+        .footer a {
+            color: white; /* E-posta bağlantısı beyaz renkte */
+            text-decoration: underline; /* Alt çizgi */
+            font-weight: bold; /* Kalın yazı */
+        }
+        .footer a:hover {
+            text-decoration: underline; /* Üzerine gelindiğinde altı çizili */
+        }
     </style>
 </head>
 <body>
+    <div class="logo-container">
+        <a href="https://penteguard.com" target="_blank">
+            <img src="https://cdn.discordapp.com/attachments/1199772049615376617/1285910972388605992/siyah_arkaplan.jpg?ex=66ebfd6a&is=66eaabea&hm=e98264dc39f75c21aba507d6d30c14a5bd6ca8a2ae92b9134dd298752c1b83da&" alt="Penteguard Logo">
+        </a>
+    </div>
     <div class="hacked">HACKED</div>
     <div class="random-text">
         <script>
@@ -58,6 +95,9 @@
             }
             textContainer.innerText = text;
         </script>
+    </div>
+    <div class="footer">
+        Bu site eğitim amaçlıdır. Siber güvenlik farkındalık eğitimi için <a href="mailto:iletisim@penteguard.com">iletisim@penteguard.com</a> adresinden bizlere ulaşabilirsiniz.
     </div>
 </body>
 </html>
